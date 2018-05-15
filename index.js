@@ -10,10 +10,15 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'client')));
 
 // Middleware
-app.use(bodyParser.JSON());
+app.use(bodyParser.json());
 
 // Generate vapid keys
-const vapidKeys = webpush.generateVAPIDKeys();
+// const vapidKeys = webpush.generateVAPIDKeys();
+// Set vapid keys
+vapidKeys.publicKey =
+  'BPY2BrEkScRg2oPpgjVi0-mQxt0HH8JIfGFL9orqeBKcBSbcSK6ZSVF_WYnxsK8Ah2_g8_r5T4CN_0OwY_-ygiU';
+vapidKeys.privateKey = '2_sP3B6tTNtBHG09nuvdo8Mj1uFgzHz3jv5BvOWhNwA';
+
 // Set details
 webpush.setVapidDetails(
   'mailto:raygreycloud@gmail.com',
