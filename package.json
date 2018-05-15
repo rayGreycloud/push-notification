@@ -1,0 +1,24 @@
+{
+  "name": "push-notification",
+  "version": "1.0.0",
+  "description": "push notifications using node and service worker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayGreycloud/push-notification.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayGreycloud/push-notification/issues"
+  },
+  "homepage": "https://github.com/rayGreycloud/push-notification#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "web-push": "^3.3.1"
+  }
+}
