@@ -6,6 +6,9 @@ const path = require('path');
 // Initialize server
 const app = express();
 
+// Set static path
+app.use(express.static(path.join(__dirname, 'client')));
+
 // Middleware
 app.use(bodyParser.JSON());
 
